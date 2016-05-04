@@ -1,0 +1,34 @@
+doctype html
+
+html
+  head
+    title Noto Sans Playing Cards Font
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible",content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui")
+    link(rel="stylesheet", type="text/css", href="font-face.css")
+    style
+      include stylesheet
+
+    style.
+      @font-face {
+        font-family: 'simple_playing_cards';
+        src: url('https://cdn.rawgit.com/tswast/simple-playing-cards/master/simple-dejavu-serif/font/Simple%20Playing%20Cards.ttf') format('truetype');
+      }
+      .simple_playing_cards {font-size: 24px; font-family: simple_playing_cards;}
+  body
+    h1 Noto Sans Playing Cards Font
+    div
+      :markdown
+        This font is simply a subset of Google's Noto Sans Symbols, only glyphs of playing cards are included. This font is (obviously) designed for large size usage. For small size use case, consider use Tim Swast's [Simple Playing Cards](https://github.com/tswast/simple-playing-cards).
+
+        A quick preview of Tim's font:
+        > <pre class="simple_playing_cards">🂡🂢🂣🂤🂥🂦🂧🂨🂩🂪🂫🂭🂮🂬🂱🂲🂳🂴🂵🂶🂷🂸🂹🂺🂻🂽🂾🂼🃁🃂🃃🃄🃅🃆🃇🃈🃉🃊🃋🃍🃎🃌🃑🃒🃓🃔🃕🃖🃗🃘🃙🃚🃛🃝🃞🃛🂠🃟🃏</pre>
+
+    div.huge
+      div.spades 🂡🂢🂣🂤🂥🂦🂧🂨🂩🂪🂫🂭🂮🂬
+      div.hearts 🂱🂲🂳🂴🂵🂶🂷🂸🂹🂺🂻🂽🂾🂼
+      div.diamonds 🃁🃂🃃🃄🃅🃆🃇🃈🃉🃊🃋🃍🃎🃌
+      div.clubs 🃑🃒🃓🃔🃕🃖🃗🃘🃙🃚🃛🃝🃞🃛
+      div.special 🂠🃟🃏
+
